@@ -1,0 +1,343 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../font/Poppins.ttf');
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('../font/Lato.ttf');
+}
+
+body {
+    background-color: #D9D9D9;
+    font-family: 'poppins';
+    margin: 0;
+}
+
+.Main {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.Sidebar {
+    background-color: white;
+    width: 230px;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+}
+
+.SidebarIn {
+    height: 100%;
+    /* width: fit-content; */
+    margin-inline: auto;
+}
+
+.SidebarInner {
+    margin: 0;
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+
+
+.Sidetxt1 {
+    font-size: 34px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'lato';
+}
+
+.Sidenavitems {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Sidenavitems a {
+    text-decoration: none;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 33px;
+    font-family: 'poppins';
+    color: #494949;
+    border-bottom: rgba(0, 0, 0, 0.29) 1px solid;
+}
+
+.active {
+    color: rgba(114, 170, 131, 1) !important;
+}
+
+.logoutholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Logoutbtn {
+    margin-inline: auto;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    width: max-content;
+    padding: 15px 30px;
+    background: linear-gradient(180deg, #48AF78 0%, #42996B 100%);
+    border-radius: 10px;
+}
+
+.helpdesktxt {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Dashboard {
+    padding: 4% 5%;
+    flex: 80%;
+    overflow-y: auto;
+    margin-left: 210px
+}
+
+.DashboardInner {}
+
+.Dashtxt1 {
+    color: #42996B;
+    font-weight: 600;
+    font-family: 'poppins';
+    font-size: 18px;
+}
+
+.DashSec1 {
+    background-color: white;
+    margin: 4% 0;
+    padding: 3% 1%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+}
+
+.DashSec1R1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Dashsec1r1c1 {
+    font-family: 'lato';
+    font-weight: 700;
+    color: #42996B;
+    font-size: 22px;
+    line-height: 22px;
+    padding-inline: 20px;
+
+}
+
+.Dashsec1r1c1>span {
+    font-family: 'lato';
+    font-weight: 500;
+    color: rgba(149, 149, 149, 1);
+    font-size: 14px;
+}
+
+.Dashsec1r1c2 {
+    display: flex;
+    justify-content: center;
+    padding-inline: 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.Dashsec1r1c2 div {
+    margin-inline: 5px;
+}
+
+.DateHolder {
+    color: #42996B;
+    font-family: 'lato';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center !important;
+}
+
+.txtleft {
+    text-align: left !important;
+}
+
+.DateHolder span {
+    color: #959595;
+    font-family: 'lato';
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.noborder {
+    border: none !important;
+}
+
+.DashSec1R2 {
+    display: flex;
+    border-radius: 20px;
+    border: #959595 1px solid;
+    margin: 3% 2% 1% 0;
+    color: #959595;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.DashSec1R2C1 {
+    padding: 5px 0;
+    flex: 40%;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+    background-color: rgba(253, 243, 7, 1);
+}
+
+.DashSec1R2C2 {
+    padding: 5px 0;
+    flex: 20%;
+    text-align: center;
+    border-left: 1px solid #959595;
+    border-right: 1px solid #959595;
+}
+
+.DashSec1R2C3 {
+    padding: 5px 0;
+    text-align: center;
+    flex: 40%;
+}
+
+.DashSec2 {
+    margin-top: 40px;
+    border-radius: 40px;
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+
+}
+
+.DashSec2R2 {
+    margin-top: 3%;
+    border-radius: 20px;
+    background-color: #48AF78;
+    padding: 5px 10px;
+    width: 70%;
+    color: white;
+}
+
+.CardsHolder {
+    margin: 4% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Card {
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+    background-color: rgba(245, 244, 244, 1);
+    width: 250px;
+}
+
+.CardInner {
+    /* position: absolute; */
+    bottom: 0;
+    /* width: 100%; */
+    padding: 15px;
+    border-radius: 10px;
+    /* border: 1px solid #959595; */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.212);
+}
+
+.CardInnerTxtHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BookBtn {
+    padding: 5px 15px;
+    width: max-content;
+    border-radius: 10px;
+    color: white;
+    background-color: #42996B;
+    display: flex;
+    align-items: center;
+}
+
+.CardInnerTxtHoldert1 {
+    font-size: 12px;
+    font-family: 'poppins';
+    font-weight: 500;
+    color: rgba(149, 149, 149, 1);
+    line-height: 14px;
+}
+
+.CardInnertxt {
+    font-size: 14px;
+    font-family: 'lato';
+    font-weight: 500;
+    color: rgba(149, 149, 149, 1);
+    margin-bottom: 15px;
+}
+
+.CardImg {
+    width: 50px;
+    margin: 15px auto 0 auto;
+}
+
+.CardImg img {
+    width: 100%;
+}
+
+
+.Holidaytxt {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'poppins';
+    font-weight: 400;
+    color: rgba(133, 195, 113, 1);
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.card1 {
+    position: relative;
+}
+
+.card1tag {
+    position: absolute;
+    top: -15px;
+    right: -40px;
+    background-color: rgba(217, 106, 107, 1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.posrel {
+    position: relative;
+}
+
+.chatholder {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    cursor: pointer;
+    width: 80px;
+}
+
+.chatholder img {
+    width: 100%;
+}
